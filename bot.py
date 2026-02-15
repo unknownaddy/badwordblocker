@@ -27,7 +27,7 @@ async def on_message(message):
 
     # 2. STOP OWNER ROLE PINGS
     # Replace 123456789012345678 with your actual Owner Role ID
-    OWNER_ROLE_ID = 123456789012345678 
+    OWNER_ROLE_ID = 1458370959537999934
     
     if any(role.id == OWNER_ROLE_ID for role in message.role_mentions):
         await message.delete()
@@ -40,5 +40,5 @@ async def on_message(message):
 keep_alive()
 
 # Use an Environment Variable for the token (Better for security)
-token = os.environ.get("DISCORD_TOKEN")
+token = os.environ.get("MTQ3MjUzMTk5OTM5Mzg0NTM4Mg.GVnzsm.hLE62PKanINJRp3DAU6gc7PoPS_kr5H4iGM1fg")
 bot.run(token)
